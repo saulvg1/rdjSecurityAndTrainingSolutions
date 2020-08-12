@@ -1,0 +1,121 @@
+#about {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $color2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .about-content {
+    color: $color5;
+    width: 90%;
+    margin: 5rem auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    h1 {
+      font-size: 5rem;
+      font-family: $mainFont;
+      padding: 20px;
+      border-left: 5px solid $color5;
+    }
+    p {
+      font-size: 3rem;
+      text-align: center;
+      width: 60%;
+    }
+  }
+  .benefits {
+    display: flex;
+    width: 90%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .benefit-item {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 50rem;
+      width: 200px;
+      height: auto;
+      font-size: 3rem;
+      margin: 2rem;
+      padding: 2rem;
+      background-color: $color5;
+      border-radius: 3px;
+
+      .icon {
+        width: 150px;
+        height: 150px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $color4;
+        border-radius: 50%;
+      }
+      .icon i {
+        color: $color2;
+        color: $color3;
+        font-size: 8rem;
+      }
+      .benefit-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h3 {
+          color: $color2;
+          font-family: $mainFont;
+          width: 60%;
+          border-bottom: 5px solid $color2;
+        }
+      }
+    }
+  }
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 30px auto;
+
+    .testimonial-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      width: 70%;
+      height: 90%;
+      margin: 30px auto;
+      padding: 30px;
+      background: $color4;
+
+      img {
+        width: 150px;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      p {
+        font-size: 3rem;
+        text-align: center;
+        width: 75%;
+        font-style: italic;
+      }
+      span {
+        font-size: 3rem;
+        text-align: center;
+        width: 75%;
+        font-family: $textFont;
+      }
+    }
+  }
+}

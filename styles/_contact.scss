@@ -1,0 +1,47 @@
+#contact {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: $color2;
+
+  .image {
+    order: 2;
+    flex: 1 1 70rem;
+    margin: 30px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+  .call-to-action {
+    order: 1;
+    flex: 1 1 70rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: $color5;
+      font-family: $titleFont;
+      font-size: 5rem;
+    }
+    a {
+      background-color: $color3;
+      color: $color5;
+      padding: 20px 30px;
+      font-size: 3rem;
+      text-decoration: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    a:focus {
+      outline: none;
+    }
+  }
+}
