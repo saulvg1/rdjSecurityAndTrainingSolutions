@@ -9,7 +9,7 @@
   .image {
     order: 2;
     flex: 1 1 70rem;
-    margin: 30px;
+    margin: 3rem;
     width: 100%;
 
     img {
@@ -35,10 +35,10 @@
     a {
       background-color: $color3;
       color: $color5;
-      padding: 20px 30px;
+      padding: 2rem 3rem;
       font-size: 3rem;
       text-decoration: none;
-      border-radius: 3px;
+      border-radius: 0.3rem;
       cursor: pointer;
     }
     a:focus {

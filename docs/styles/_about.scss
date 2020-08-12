@@ -1,5 +1,5 @@
 #about {
-  min-height: 100vh;
+  height: auto;
   width: 100%;
   background-color: $color2;
   display: flex;
@@ -20,8 +20,8 @@
     h1 {
       font-size: 5rem;
       font-family: $mainFont;
-      padding: 20px;
-      border-left: 5px solid $color5;
+      padding: 2rem;
+      border-left: 0.5rem solid $color5;
     }
     p {
       font-size: 3rem;
@@ -32,7 +32,7 @@
   .benefits {
     display: flex;
     width: 90%;
-    margin: 50px auto;
+    margin: 5rem auto;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -43,13 +43,13 @@
       align-items: center;
       justify-content: center;
       flex: 1 1 50rem;
-      width: 200px;
+      width: 20rem;
       height: auto;
       font-size: 3rem;
       margin: 2rem;
       padding: 2rem;
       background-color: $color5;
-      border-radius: 3px;
+      border-radius: 0.3rem;
 
       .icon {
         width: 15rem;
@@ -86,17 +86,17 @@
     flex-wrap: wrap;
     justify-content: space-around;
     width: 90%;
-    margin: 30px auto;
+    margin: 3rem auto;
 
     .testimonial-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      max-width: 500px;
+      max-width: 50rem;
       width: 70%;
       height: 90%;
-      margin: 30px auto;
-      padding: 30px;
+      margin: 3rem auto;
+      padding: 3rem;
       background: $color4;
 
       img {

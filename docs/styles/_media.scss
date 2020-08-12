@@ -1,6 +1,26 @@
-@media screen and (max-width: 375px) {
+//iphone x size
+@media screen and (min-width: 200px) and (max-width: 420px) {
   body,
   html {
     font-size: 19%;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 800px) {
+  body,
+  html {
+    font-size: 28%;
+  }
+}
+//ipad size
+@media screen and (min-width: 801px) and (max-width: 1034px) {
+  body,
+  html {
+    font-size: 36.5%;
+  }
+}
+@media screen and (min-width: 1035px) and (max-width: 1400px) {
+  body,
+  html {
+    font-size: 45%;
   }
 }
