@@ -72,14 +72,25 @@ html {
 }
 
 #home {
-  min-height: 100vh;
-  padding-top: 10vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/backgroundImages/securitybackground.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/backgroundImages/securitybackground.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: auto;
   position: relative;
+}
+
+#home .home-img {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%);
+}
+
+#home .home-img img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  z-index: -4;
 }
 
 #home .content {
@@ -222,8 +233,8 @@ html {
 }
 
 #about .benefits .benefit-item .icon {
-  width: 150px;
-  height: 150px;
+  width: 15rem;
+  height: 15rem;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +275,8 @@ html {
   color: #14213d;
   font-family: "Overpass", sans-serif;
   width: 60%;
-  border-bottom: 5px solid #14213d;
+  border-bottom: 1rem solid #14213d;
+  border-radius: 0.5rem;
 }
 
 #about .testimonials {
@@ -299,20 +311,20 @@ html {
 }
 
 #about .testimonials .testimonial-wrapper img {
-  width: 150px;
+  width: 15rem;
   height: auto;
   border-radius: 50%;
 }
 
 #about .testimonials .testimonial-wrapper p {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
   width: 75%;
   font-style: italic;
 }
 
 #about .testimonials .testimonial-wrapper span {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
   width: 75%;
   font-family: "Open Sans", sans-serif;
@@ -362,6 +374,7 @@ html {
 #services .text-content h1 {
   font-size: 5rem;
   font-family: "Overpass Mono", monospace;
+  text-align: center;
 }
 
 #services .text-content p {
@@ -415,15 +428,15 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 15rem;
+  height: 15rem;
   background: #14213d;
   border-radius: 50%;
 }
 
 #services .services-content .service .icon-wrapper i {
   color: #ffffff;
-  font-size: 5rem;
+  font-size: 8rem;
   text-align: center;
 }
 
@@ -431,6 +444,7 @@ html {
   font-size: 5rem;
   color: #14213d;
   font-family: "Overpass", sans-serif;
+  margin: 3rem;
 }
 
 #contact {
@@ -565,7 +579,7 @@ footer .footer-wrapper .column1 h3 {
   font-size: 3rem;
   font-family: "Overpass", sans-serif;
   font-weight: 900;
-  border-bottom: 4px solid #fca311;
+  border-bottom: 0.5rem solid #fca311;
 }
 
 footer .footer-wrapper .column2 {
@@ -598,7 +612,7 @@ footer .footer-wrapper .column2 h3 {
   font-size: 3rem;
   font-family: "Overpass", sans-serif;
   font-weight: 900;
-  border-bottom: 4px solid #fca311;
+  border-bottom: 0.5rem solid #fca311;
 }
 
 footer .footer-wrapper .column2 a {
@@ -627,7 +641,7 @@ footer .footer-wrapper .column3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -635,14 +649,44 @@ footer .footer-wrapper .column3 h3 {
   font-size: 3rem;
   font-family: "Overpass", sans-serif;
   font-weight: 900;
-  border-bottom: 4px solid #fca311;
+  border-bottom: 0.5rem solid #fca311;
 }
 
-footer .footer-wrapper .column3 a {
+footer .footer-wrapper .column3 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+footer .footer-wrapper .column3 .info a {
   width: 100%;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #14213d;
+  text-align: center;
+}
+
+footer .footer-wrapper .column3 .info a i {
+  margin: 1rem;
+  display: inline;
+}
+
+@media screen and (max-width: 375px) {
+  body,
+  html {
+    font-size: 19%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

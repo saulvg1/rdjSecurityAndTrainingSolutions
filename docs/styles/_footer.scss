@@ -24,7 +24,7 @@ footer {
         font-size: 3rem;
         font-family: $mainFont;
         font-weight: 900;
-        border-bottom: 4px solid $color3;
+        border-bottom: 0.5rem solid $color3;
       }
     }
     .column2 {
@@ -42,7 +42,7 @@ footer {
         font-size: 3rem;
         font-family: $mainFont;
         font-weight: 900;
-        border-bottom: 4px solid $color3;
+        border-bottom: 0.5rem solid $color3;
       }
       a {
         font-size: 2rem;
@@ -58,21 +58,33 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px;
+      padding: 2rem;
       width: 100%;
 
       h3 {
         font-size: 3rem;
         font-family: $mainFont;
         font-weight: 900;
-        border-bottom: 4px solid $color3;
+        border-bottom: 0.5rem solid $color3;
       }
-      a {
-        width: 100%;
-        font-family: $textFont;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: $color2;
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        a {
+          width: 100%;
+          font-family: $textFont;
+          font-size: 2.5rem;
+          text-decoration: none;
+          color: $color2;
+          text-align: center;
+          i {
+            margin: 1rem;
+            display: inline;
+          }
+        }
       }
     }
   }
